@@ -16,7 +16,10 @@ namespace WinFormsTelefonbuchXML
         public string Email { get; set; }
         public DateTime CreatedAt { get; set; }
 
+        public Person()
+        {
 
+        }
 
         public Person(string forename, string name, string phone, string email)
         {

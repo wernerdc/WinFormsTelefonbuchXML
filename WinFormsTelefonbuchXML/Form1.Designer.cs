@@ -207,9 +207,11 @@
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
             Controls.Add(panel1);
+            MaximizeBox = false;
             Name = "WindowsFormsTelefonbuch";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "WinFormsTelefonbuchXML";
+            FormClosing += WindowsFormsTelefonbuch_FormClosing;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
