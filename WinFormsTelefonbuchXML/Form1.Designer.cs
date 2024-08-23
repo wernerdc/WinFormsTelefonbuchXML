@@ -67,13 +67,13 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 165);
+            panel1.Size = new Size(718, 159);
             panel1.TabIndex = 0;
             // 
             // btnLoad
             // 
             btnLoad.Enabled = false;
-            btnLoad.Location = new Point(318, 113);
+            btnLoad.Location = new Point(291, 104);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(122, 23);
             btnLoad.TabIndex = 13;
@@ -83,7 +83,7 @@
             // btnSave
             // 
             btnSave.Enabled = false;
-            btnSave.Location = new Point(446, 112);
+            btnSave.Location = new Point(419, 103);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(122, 23);
             btnSave.TabIndex = 12;
@@ -92,7 +92,7 @@
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(574, 112);
+            btnExit.Location = new Point(547, 103);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(122, 23);
             btnExit.TabIndex = 11;
@@ -103,14 +103,14 @@
             // comboBoxSelectPerson
             // 
             comboBoxSelectPerson.FormattingEnabled = true;
-            comboBoxSelectPerson.Location = new Point(318, 84);
+            comboBoxSelectPerson.Location = new Point(291, 75);
             comboBoxSelectPerson.Name = "comboBoxSelectPerson";
             comboBoxSelectPerson.Size = new Size(250, 23);
             comboBoxSelectPerson.TabIndex = 10;
             // 
             // btnDeletePerson
             // 
-            btnDeletePerson.Location = new Point(574, 83);
+            btnDeletePerson.Location = new Point(547, 74);
             btnDeletePerson.Name = "btnDeletePerson";
             btnDeletePerson.Size = new Size(122, 23);
             btnDeletePerson.TabIndex = 9;
@@ -120,7 +120,7 @@
             // 
             // btnAddPerson
             // 
-            btnAddPerson.Location = new Point(574, 54);
+            btnAddPerson.Location = new Point(547, 45);
             btnAddPerson.Name = "btnAddPerson";
             btnAddPerson.Size = new Size(122, 23);
             btnAddPerson.TabIndex = 8;
@@ -131,7 +131,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(446, 36);
+            label4.Location = new Point(419, 27);
             label4.Name = "label4";
             label4.Size = new Size(36, 15);
             label4.TabIndex = 7;
@@ -140,7 +140,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(318, 36);
+            label3.Location = new Point(291, 27);
             label3.Name = "label3";
             label3.Size = new Size(45, 15);
             label3.TabIndex = 6;
@@ -149,7 +149,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(190, 36);
+            label2.Location = new Point(163, 27);
             label2.Name = "label2";
             label2.Size = new Size(39, 15);
             label2.TabIndex = 5;
@@ -158,7 +158,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(62, 36);
+            label1.Location = new Point(35, 27);
             label1.Name = "label1";
             label1.Size = new Size(54, 15);
             label1.TabIndex = 4;
@@ -166,28 +166,28 @@
             // 
             // textBoxEmail
             // 
-            textBoxEmail.Location = new Point(446, 54);
+            textBoxEmail.Location = new Point(419, 45);
             textBoxEmail.Name = "textBoxEmail";
             textBoxEmail.Size = new Size(122, 23);
             textBoxEmail.TabIndex = 3;
             // 
             // textBoxPhone
             // 
-            textBoxPhone.Location = new Point(318, 54);
+            textBoxPhone.Location = new Point(291, 45);
             textBoxPhone.Name = "textBoxPhone";
             textBoxPhone.Size = new Size(122, 23);
             textBoxPhone.TabIndex = 2;
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(190, 54);
+            textBoxName.Location = new Point(163, 45);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(122, 23);
             textBoxName.TabIndex = 1;
             // 
             // textBoxForename
             // 
-            textBoxForename.Location = new Point(62, 54);
+            textBoxForename.Location = new Point(35, 45);
             textBoxForename.Name = "textBoxForename";
             textBoxForename.Size = new Size(122, 23);
             textBoxForename.TabIndex = 0;
@@ -196,9 +196,9 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 165);
+            dataGridView1.Location = new Point(0, 159);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(800, 285);
+            dataGridView1.Size = new Size(718, 202);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
@@ -206,7 +206,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(718, 361);
             Controls.Add(dataGridView1);
             Controls.Add(panel1);
             MaximizeBox = false;
