@@ -88,13 +88,43 @@ namespace WinFormsTelefonbuchXML
                 {
                     XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Person>));
                     _persons.Clear();
-                    _persons = (List<Person>)xmlSerializer.Deserialize(xmlReader);
+                    _persons = xmlSerializer.Deserialize(xmlReader) as List<Person>;
                 }
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Person person = dataGridView1.CurrentRow.DataBoundItem as Person;
+            if (person == null)
+            {
+                return;
+            }
+            ShowSelectedPerson(person);
+        }
+
+        private void ShowSelectedPerson(Person person)
+        {
+            textBoxForename.Text = person.Forename;
+            textBoxName.Text = person.Name;
+            textBoxPhone.Text = person.Phone;
+            textBoxEmail.Text = person.Email;
+        }
+
+        private void btnDeletePerson_Click(object sender, EventArgs e)
+        {
+            // reference to selected person in datagridview
+            Person person = dataGridView1.CurrentRow.DataBoundItem as Person;
+            if (person == null)
+            {
+                return;
+            }
+            _persons.Remove(person);
+            ShowPersons();
         }
     }
 }

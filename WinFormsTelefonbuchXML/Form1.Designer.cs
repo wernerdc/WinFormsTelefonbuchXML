@@ -116,6 +116,7 @@
             btnDeletePerson.TabIndex = 9;
             btnDeletePerson.Text = "Person löschen";
             btnDeletePerson.UseVisualStyleBackColor = true;
+            btnDeletePerson.Click += btnDeletePerson_Click;
             // 
             // btnAddPerson
             // 
@@ -199,6 +200,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(800, 285);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // WindowsFormsTelefonbuch
             // 
