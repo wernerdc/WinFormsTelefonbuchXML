@@ -54,7 +54,7 @@ namespace WinFormsTelefonbuchXML
         {
             // settings for dataGridView
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersVisible = false;        // dont work, because designer overrides setting
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false;
         }
@@ -99,9 +99,10 @@ namespace WinFormsTelefonbuchXML
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Person person = dataGridView1.CurrentRow.DataBoundItem as Person;
+            Person? person = dataGridView1.CurrentRow.DataBoundItem as Person;
             if (person == null)
             {
+                // could display error message..
                 return;
             }
             ShowSelectedPerson(person);
@@ -118,7 +119,7 @@ namespace WinFormsTelefonbuchXML
         private void btnDeletePerson_Click(object sender, EventArgs e)
         {
             // reference to selected person in datagridview
-            Person person = dataGridView1.CurrentRow.DataBoundItem as Person;
+            Person? person = dataGridView1.CurrentRow.DataBoundItem as Person;
             if (person == null)
             {
                 return;

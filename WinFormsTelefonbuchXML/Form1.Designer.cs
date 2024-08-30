@@ -32,7 +32,6 @@
             btnLoad = new Button();
             btnSave = new Button();
             btnExit = new Button();
-            comboBoxSelectPerson = new ComboBox();
             btnDeletePerson = new Button();
             btnAddPerson = new Button();
             label4 = new Label();
@@ -53,7 +52,6 @@
             panel1.Controls.Add(btnLoad);
             panel1.Controls.Add(btnSave);
             panel1.Controls.Add(btnExit);
-            panel1.Controls.Add(comboBoxSelectPerson);
             panel1.Controls.Add(btnDeletePerson);
             panel1.Controls.Add(btnAddPerson);
             panel1.Controls.Add(label4);
@@ -99,14 +97,6 @@
             btnExit.Text = "Beenden";
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
-            // 
-            // comboBoxSelectPerson
-            // 
-            comboBoxSelectPerson.FormattingEnabled = true;
-            comboBoxSelectPerson.Location = new Point(291, 75);
-            comboBoxSelectPerson.Name = "comboBoxSelectPerson";
-            comboBoxSelectPerson.Size = new Size(250, 23);
-            comboBoxSelectPerson.TabIndex = 10;
             // 
             // btnDeletePerson
             // 
@@ -195,6 +185,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.ColumnHeadersVisible = false;
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(0, 159);
             dataGridView1.Name = "dataGridView1";
@@ -226,7 +217,6 @@
         private Panel panel1;
         private DataGridView dataGridView1;
         private TextBox textBoxForename;
-        private ComboBox comboBoxSelectPerson;
         private Button btnDeletePerson;
         private Button btnAddPerson;
         private Label label4;
